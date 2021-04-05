@@ -35,7 +35,7 @@ class LikeController extends Controller
      */
     public function store(Request $request)
     {
-        dd(123);
+        return 123;
     }
 
     /**

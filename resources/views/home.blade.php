@@ -9,7 +9,9 @@
                         <div class="card card-body question-area mb-3">
                             <h4>{{ $data->question_title }}
                                 <span class="badge badge-secondary ml-2">{{ $data->category->categroy_name }}</span>
-                                <a href="{{ route('like.store') }}" class="like-button badge badge-dark ml-3">&#128077 <span id="like-count">55</span></a>
+                                <form action="">
+                                    <a href="{{ route('like.store') }}" class="like-button badge badge-dark ml-3">&#128077 <span id="like-count">55</span></a>
+                                </form>
                             </h4>
                             <p>{{ $data->question_description }}</p>
                             <div>
