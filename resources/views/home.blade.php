@@ -8,10 +8,17 @@
                     @foreach($question as $data)
                         <div class="card card-body question-area mb-3">
                             <h4>{{ $data->question_title }}
-                                <span class="badge badge-secondary ml-2">{{ $data->category->categroy_name }}</span>
-                                <form action="">
-                                    <a href="{{ route('like.store') }}" class="like-button badge badge-dark ml-3">&#128077 <span id="like-count">55</span></a>
-                                </form>
+                                @if(Auth::user())
+                                    <span class="badge badge-secondary ml-2">{{ $data->category->categroy_name }}</span>
+                                    <button class="like-button badge badge-dark ml-3" onclick="likeSubmit({{$data->id}})" id="like-submit-{{ $data->id }}">
+                                        &#128077 <span id="like-count-{{$data->id}}">{{$data->like_count}}</span>
+                                    </button>
+                                @else
+                                    <span class="badge badge-secondary ml-2">{{ $data->category->categroy_name }}</span>
+                                    <a href="{{ route('login') }}" class="like-button badge badge-dark ml-3">
+                                        &#128077 <span id="like-count">{{$data->like_count}}</span>
+                                    </a>
+                                @endif
                             </h4>
                             <p>{{ $data->question_description }}</p>
                             <div>
@@ -27,3 +34,14 @@
         </div>
     @endif
 @endsection
+@push('js')
+    <script>
+        function likeSubmit(questionId){
+            let _token = "{{ csrf_token() }}";
+            let id = questionId;
+            $.post("{{ Route('likeStore') }}",{_token,id: id},function(data){
+                document.getElementById('like-count-'+questionId).innerHTML = data;
+            })
+        }
+    </script>
+@endpush

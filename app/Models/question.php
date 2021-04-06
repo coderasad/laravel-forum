@@ -19,4 +19,8 @@ class question extends Model
     {
         return $this->belongsTo(category::class);
     }
+    public function like()
+    {
+        return $this->hasMany(Like::class);
+    }
 }

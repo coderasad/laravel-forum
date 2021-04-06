@@ -33,9 +33,29 @@ class LikeController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function likeStore(Request $request)
     {
-        return 123;
+        $likes = Like::where('user_id', Auth()->id())->where('question_id', $request->id)->first();
+        if($likes == null){
+            $like = new Like();
+            $like->user_id = Auth()->id();
+            $like->question_id = $request->id;
+            $like->save();
+            $like = Like::where('question_id', $request->id)
+                    ->groupBy('question_id')
+                    ->selectRaw('count(*) as total, question_id')
+                    ->first();
+            $likeTotal = $like->total ?? 0;
+            return response()->json($likeTotal);
+        }else{
+            $likes->delete();
+            $like = Like::where('question_id', $request->id)
+                ->groupBy('question_id')
+                ->selectRaw('count(*) as total, question_id')
+                ->first();
+            $likeTotal = $like->total ?? 0;
+            return response()->json($likeTotal);
+        }
     }
 
     /**

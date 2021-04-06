@@ -20,5 +20,5 @@ Route::get('/home','HomeController@index')->name('home');
 
 Route::resource('question', 'QuestionController');
 Route::resource('answer', 'AnswerController');
-Route::resource('like', 'LikeController');
+Route::post('like-store', 'LikeController@likeStore')->name('likeStore');
 
