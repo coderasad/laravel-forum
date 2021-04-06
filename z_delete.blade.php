@@ -7,3 +7,17 @@
         </div>
     </div>
 @endsection
+
+
+/* passport ========
+
+1. auth.php
+        'api' => [
+            'driver' => 'passport',
+            'provider' => 'users',
+            'hash' => false,
+        ],
+
+
+
+*/
