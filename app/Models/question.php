@@ -19,6 +19,10 @@ class question extends Model
     {
         return $this->belongsTo(category::class);
     }
+    public function answer()
+    {
+        return $this->hasMany(answer::class)->orderBy('id', 'DESC');
+    }
     public function like()
     {
         return $this->hasMany(Like::class);
