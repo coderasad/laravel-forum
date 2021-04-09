@@ -29,13 +29,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fa07945-c766-473c-9bd9-1f105b573e83" name="Default Changelist" comment="home page done">
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/z_delete.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/z_delete.blade.php" afterDir="false" />
+    <list default="true" id="2fa07945-c766-473c-9bd9-1f105b573e83" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +217,8 @@
       <workItem from="1617595356734" duration="3267000" />
       <workItem from="1617602008578" duration="27484000" />
       <workItem from="1617682870197" duration="12197000" />
-      <workItem from="1617702298348" duration="6140000" />
+      <workItem from="1617702298348" duration="8225000" />
+      <workItem from="1617710660113" duration="17000" />
     </task>
     <servers />
   </component>
@@ -255,7 +251,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="home page done" />
-    <option name="LAST_COMMIT_MESSAGE" value="home page done" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="WindowStateProjectService">
     <state x="736" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1617364547832">
@@ -279,17 +275,17 @@
     </state>
     <state x="247" y="164" width="1350" height="710" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1617366438629" />
     <state x="461" y="204" key="SettingsEditor/0.40.1920.1040@0.40.1920.1040" timestamp="1616481023241" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1617703723930">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1617708905148">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617703723930" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617708905148" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1617631606861">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617631606861" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1617706466999">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1617708570300">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1617706466999" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1617708570300" />
   </component>
 </project>
