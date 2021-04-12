@@ -37,10 +37,10 @@ class QuestionController extends Controller
         return question::with('category')->with('answer')->with('answer.user')->findorfail($id);         
     }
 
-    public function likeStore(Request $request)
+    public function likeStore(Request $request,$userID, $id)
     {
        
-        // return $request->userId;
+        return $userID;
         // $likes = Like::where('user_id', Auth()->id())->where('question_id', $request->id)->first();
         // if($likes == null){
         //     $like = new Like();

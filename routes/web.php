@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,7 +18,6 @@ Auth::routes();
 
 Route::get('/','PageController@index');
 Route::get('/home','HomeController@index')->name('home');
-
 Route::resource('question', 'QuestionController');
 Route::resource('answer', 'AnswerController');
 Route::post('like-store', 'LikeController@likeStore')->name('likeStore');
